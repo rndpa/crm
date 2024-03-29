@@ -1,0 +1,13 @@
+{% extends 'crm_web/base.html' %}
+{% load static %}
+
+{% block main %}
+    <h1>Вход в CRM_WEB</h1>
+    <div class="login__form">
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Войти</button>
+        </form>
+    </div>
+{% endblock %}

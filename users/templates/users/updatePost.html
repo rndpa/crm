@@ -1,0 +1,16 @@
+{% extends 'crm_web/base.html' %}
+{% load static %}
+
+{% block main %}
+    <H1>Изменение записи {{ report.fio }}</H1>
+    {% if report.created_at == date_today %}
+        <form action="" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Обновить</button>
+        </form>
+    {% else %}
+        <h4>Время на изменение вышло</h4>
+    {% endif %}
+
+{% endblock %}
