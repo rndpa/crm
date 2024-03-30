@@ -26,9 +26,6 @@ WEB приложение CRM для организации
 
 Доступы:
 
-адрес www.res-it.ru
-адрес админки www.res-it.ru/admin
-
 user admin
 pass admin
 
